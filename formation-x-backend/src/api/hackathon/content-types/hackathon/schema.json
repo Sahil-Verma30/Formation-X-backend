@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hackathons",
+  "info": {
+    "singularName": "hackathon",
+    "pluralName": "hackathons",
+    "displayName": "hackathon"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "priceMoney": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "WebDevelopment",
+        "AIML",
+        "Web3Hackathon",
+        "IdeationHackathon",
+        "FinTech",
+        "GamingARVR",
+        "ProblemSolvingHackathon"
+      ]
+    },
+    "hackathonStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Live",
+        "Upcoming",
+        "Closed"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "venue": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "about": {
+      "type": "blocks"
+    },
+    "minTeamSize": {
+      "type": "integer"
+    },
+    "maxTeamSize": {
+      "type": "integer"
+    },
+    "contactEmail": {
+      "type": "email"
+    },
+    "linkdinId": {
+      "type": "string"
+    },
+    "twitterId": {
+      "type": "string"
+    },
+    "applicationOpen": {
+      "type": "datetime"
+    },
+    "applicationClose": {
+      "type": "datetime"
+    },
+    "rsvp": {
+      "type": "integer"
+    },
+    "hackathonBegin": {
+      "type": "datetime"
+    },
+    "submissionDeadline": {
+      "type": "datetime"
+    },
+    "faqs": {
+      "type": "json"
+    }
+  }
+}
